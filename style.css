@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color: black;
+}
+
+#navbar {
+    display: flex;
+    height: 100px;
+    width: 1200px;
+    justify-content: space-between;
+    margin: 0 auto;
+    box-shadow: 0 2px 2px -2px grey;
+}
+
+#main-nav {
+    display: flex;
+    width: 800px;
+    height: 100px;
+    justify-content: space-around;
+}
+
+#main-nav li {
+    display: flex;
+    align-items: center;
+}
+
+#main-nav li a {
+    display: block;
+    font-family: Pluto, Helvetica, sans-serif;
+}
+
+#main-nav li a:hover {
+    color: #dc3545;
+    border-bottom: 1px solid #dc3545;
+}
+
+#logo-wrap {
+    display: flex; 
+    align-items: center;
+}
+
+#logo-wrap img {
+    height: 35px;
+    cursor: pointer;
+}
+
+#search, #burger-menu {
+    display: flex;
+    align-items:center;
+}
+
+#symbol-wrap {
+    display: flex;
+}
+
+#search img {
+    height: 35px;
+    width: auto;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+#burger-menu img {
+    height: 35px;
+    width: auto;
+    cursor: pointer;
+}
+
+/* - - - Start Overlay - - - - - - */
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9000;
+    background: #dc3545;
+    height: 100vh;
+    width: 100vw;
+}
+
+#entry-btn {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 100px;
+    background: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transform-origin: 0px 0px;
+    cursor: pointer;
+    box-shadow: 0 0 3px 2px rgba(255, 255, 255, 0.3);
+}
+
+#entry-btn:hover {
+    scale: 1.1;
+    transition: all .2s ease-out;
+    box-shadow: 0 0 3px 7px rgba(255, 255, 255, 0.3);
+}
+
+#entry-btn span {
+    font-family: Pluto, Helvetica, sans-serif;
+}
+
+/* to body by js: */
+.noscroll {
+    overflow: hidden;
+}
+/* end */
+
+#svg-logo {
+    width: 100vw;
+    height: 100vh;
+}
+
+#parcel-A {
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#letters path {
+    opacity: 0;
+
+}
+
+#path-A, #path-B, #path-C, #path-D {
+    opacity: 0;
+}
+
+#svg-logo {
+    transform-box: fill-box;
+}
+
+/* - - - Body styling start - - - */
+
+/* - - - Banner styling - - - - - */
+
+#coupon-card {
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,.5);
+    border-radius: 8px;
+    margin: 0 auto;
+    width: 1200px;
+    margin-bottom: 30px;
+}
+
+#coupon-btn {
+    height: 40px;
+    width: 230px;
+    border: none;
+    border-radius: 8px;
+    align-self: flex-end;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Pluto;
+    box-shadow: 0 0 3px 2px rgba(255, 255, 255, 0.3);
+}
+
+#coupon-btn:hover {
+    scale: 1.05;
+    transition: all .1s ease-out;
+    box-shadow: 0 0 3px 5px rgba(255, 255, 255, 0.3);
+}
+
+#banner-wrap {
+    width: 1205px;
+    height: 489px;
+    margin: 20px auto 0 auto;
+    /* border: 3px solid #dc3545; */
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+#banner-wrap svg {
+    border-radius: 8px;
+}
+
+#banner-text, #banner-text-2 {
+    font-family: Pluto;
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    z-index: 900;
+    left: 500px;
+    top: 220px;
+    width: 351px;
+}
+
+#banner-text-3 {
+    font-family: Pluto;
+    font-size: 30px;
+    position: absolute;
+    z-index: 900;
+    left: 101px;
+    top: 220px;
+    width: 488px;
+}
+
+#svg-wrap {
+    position: relative;
+}
+
+#cardboard-box {
+    transform-Origin: 167px 80px;
+}
+
+#shadow {
+    transform-origin: 123px 39px;
+}
+
+#coupon {
+    position: absolute;
+}
+
+#coupon-text {
+    transform: translateX(-4px);
+    font-size: 38px;
+}
+
+#banner-coupon-btn {
+    height: 40px;
+    width: 250px;
+    left: -345px;
+    top: 65.5%;
+    position: absolute;
+    z-index: 9002;
+    background: #dc3545;
+    border: none;
+    border-radius: 8px;
+    font-family: Pluto;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    opacity: 1;
+}
+
+#banner-coupon-btn:hover {
+    transform: scale(1.05);
+    transition: all .1s ease-out;
+}
+
+#warning {
+    height: auto;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px 15px 20px;
+    background-color: #dc3545;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0 0 8px 8px;
+    cursor: pointer;
+}
+
+#warning p:nth-child(1) {
+    color: white;
+    margin: 0;
+    font-size: 16px;
+    width: 900px;
+}  
+
+.title {
+    font-weight: 100;
+    font-size:19px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-weight: 500;
+    font-size: 17px;
+    line-break: 15px;
+}
+
+.read-more {
+    align-self: flex-end;
+    font-weight: 200;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    width: 380px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,.3);
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: all .1s ease-out;
+}
+
+.card-text {
+    height: 170px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, .2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.category {
+    font-size: 16px !important;
+    font-style: italic;
+    font-weight: 200;
+    margin-bottom: 20px;
+    color: lightgray;
+}
+
+#article-img-5 p, #article-img-5 > a {
+    color: black;
+}
+
+#article-grid {
+    display: flex;
+    width: 1220px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.article-img {
+    height: 290px;
+    width: 380px;
+}
+
+#article-img-1 {
+    background: url("images/Corona.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#article-img-2 {
+    background: url("images/woman.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#article-img-3 {
+    background: url("images/EU.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#article-img-4 {
+    background: url('images/work.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#article-img-5 {
+    background: url("images/smart.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#article-img-6 {
+    background: url("https://www.dpd.com/wp-content/uploads/sites/77/2020/06/dpd_symbolmap_world_4c_coated_364x140.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -45px;
+}
+
+/* - - - Company Page - - - - - - - - */
+
+#company-facts {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#company-facts:nth-child(2) {
+    margin-top: 20px;
+}
+
+.half-wrap {
+    height: 338px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.img-half {
+    height: 100%;
+    width: 48.5%;
+    cursor: pointer;
+}
+
+.text-half {
+    height: 100%;
+    width: 48.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    cursor: pointer;
+}
+
+.text-half p:nth-child(1), .text-half p:nth-child(2) {
+    margin-bottom: 20px !important;
+}
+
+#fact-1-left {
+    background-image: url("images/world.png");
+}
+
+#fact-2-right {
+    background-image: url("images/car.jpg");
+}
+
+.btn {
+    background: #dc3545;
+    border: none;
+    height: 45px;
+    color: white;
+    font-size: 14px;
+    margin-top: 5px;
+    width: 300px;
+    cursor: pointer;
+}
+
+#banner-wrap-2 {
+    width: 100vw;
+    height: 256px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+#bg-color-div {
+    height: 252px;
+    width: 100%;
+    background-color: white;
+}
+
+#logo-dice {
+    position: absolute;
+    left: 38%;
+    top: 46px;
+    transform-origin: 70px 80px;
+}
+
+#dpd-font {
+    position: absolute;
+    left: 50%;
+    top: 82px;
+    height: 42%;
+}
+
+#numbers {
+    display: block;
+    margin: 5px auto 0 auto;
+}
+
+#body-company {
+    height: 200vh;
+}
+
